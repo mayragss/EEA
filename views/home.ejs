@@ -1,67 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
     <title>EEA</title>
-    <style>
-        body{
-            margin: 0px;
-        }
-.navbar{
-    position: relative;
-    background-color: #000;
-}
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-.quality-text{
-    color: var(--unnamed-color-ffffff);
-text-align: left; 
-letter-spacing: 4.8px;
-color: #FFFFFF;
-opacity: 1;
-}
-.full-width{
-    width: 100%;
-}
-.intro-div{
-    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #CFCFD029 0%, #303032B0 53%, #313132E0 80%, #313132 100%) 0% 0% no-repeat padding-box;
-}
-        /*already responsive*/
-        .banner {
-    opacity: 0.8;
-  width: 100%;
-  height: 669px; 
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-  display: block;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-    </style>
+    
 </head>
 <body>
-    <nav class="navbar">
-    <div class="container ">
-        <img class="banner" src="images/banner.jpg">
-        <div class="centered"> <p  >  QUALITY, HEALTH, SAFETY AND ENVIRONMENTAL CARE </p></div>
-    </div>
+    <nav class="main-menu">
+        <i class="fas fa-search default-search"></i>
+        <ul class="menu-operations">
+            <li class="main-item"> Home </li>
+            <li class="main-item"> About us </li>
+            <li class="main-item"> Services </li>
+            <li class="main-item"> Contact Us </li>
+        </ul>
+    </nav>
+    
+    <section class="container ">
+        <img class="banner" src="images/home-estaleiro.jpg">
+        
+        <div class="left-tittle"> 
+            <p  class="banner-tittle">  
+                <span>ESTALEIRO</span>  
+                <span>ATLÂNTICO</span> 
+                <span>DO AMBOIM</span> 
+            </p>
+        </div>
 
-    <div class="full-width intro-div" > </div>
-</nav>
+        <div class="social-icons-banner">
+            <i class="fab fa-facebook-f icons-banner padding-14"></i>
+            <i class="fab fa-whatsapp icons-banner"></i>
+        </div>
+    </section>
+
+    
+
+    <section class="intro">
+        <div class="intro-text">
+            <div class="separator">
+                <div class="line"></div>
+                <h6>intro</h6>
+              </div>
+        </div>
+    </section> 
+    <section class="intro-section">
+
+        <div class="intro-description">
+            <p>
+                The Estaleiro Atlantico do Amboim (EAA), 
+                is a shipyard <br>
+                and energy industry in Angola. 
+                The manufacturing yard is <br>
+                located at Praia do Kissonde, 
+                Porto Amboim, Kwanza-<br>
+                Sul, Angola. Specializes in the construction
+                of underwater <br>
+                 structures and the manufacture of support <br>
+                 equipment for<br>
+                  the oil and gas industry.
+            </p>
+        </div>
+    </section> 
+
+    <aside class="fabric-img">
+        <img src="/images/yard.jpg">
+    </aside>
+
 </body>
 </html>

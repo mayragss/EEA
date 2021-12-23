@@ -1,9 +1,7 @@
-const express= require('express'),
-route = express.Router();
+const route= require('express').Router();
 
 
 route.get('/', (req,res)=>{
-    console.log('index')
     res.render('home')
 })
 

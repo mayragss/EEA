@@ -1,0 +1,124 @@
+/*
+**************************************
+*                FONTS               *
+**************************************
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #313132;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.quality-text {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 4.8px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/*already responsive*/
+.banner {
+  opacity: 1.8;
+  width: 100%;
+  height: 469px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+
+.banner-tittle {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 6.4px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.left-tittle {
+  position: absolute;
+  top: 53%;
+  margin-left: 42%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  text-align: left;
+  font-weight: 800;
+}
+
+.left-tittle,
+span {
+  display: table;
+}
+
+.padding-14 {
+  padding-bottom: 14px;
+}
+
+.icons-banner {
+  display: block;
+}
+
+.social-icons-banner {
+  display: grid;
+  position: absolute;
+  top: 53%;
+  left: 96%;
+}
+
+.intro-text {
+  padding-left: 24%;
+}
+
+.intro-section {
+  position: relative;
+  color: #858585;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro {
+  position: absolute;
+  width: 200px;
+  margin-left: 20%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro-description {
+  width: 29%;
+  padding-left: 45%;
+  word-spacing: 8px;
+  font-size: 12px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator .line {
+  height: 1px;
+  flex: 1;
+  background-color: #858585;
+}
+
+.separator h6 {
+  padding-left: 4px;
+  color: #858585;
+}
