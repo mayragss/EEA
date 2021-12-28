@@ -3,7 +3,7 @@ require("express-async-errors");
 
 const express = require('express'),
 app = express();
-const port = 3000,
+const port = process.env.PORT || 3000,
         bodyParser = require('body-parser'),
         path = require('path'),
         methodOverride = require('method-override');
