@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/home/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <title>EEA Contact US</title>
+    
+</head>
+<body>
+    <%- include('partials/menu.ejs') %>
+
+    
+    <section class="container "> 
+        <img class="banner" src="images/EAA_waves-02.svg">
+        
+        <div class="left-tittle"> 
+            <p  class="banner-tittle">  
+                <span>GET</span>  
+                <span>IN</span> 
+                <span>TOUCH</span> 
+            </p>
+        </div>
+
+        <div class="social-icons-banner">
+            <i class="fab fa-facebook-f icons-banner padding-14"></i>
+            <i class="fab fa-whatsapp icons-banner"></i>
+        </div>
+    </section>
+ 
+
+    <section class="contact-section-form">
+
+        <div class="contact=form">
+            <span class="label">NAME</span>
+            <input type="text" class="input">
+
+            <span class="label">EMAIL</span>
+            <input type="text" class="input">
+
+            <span class="label">SUBJECT</span>
+            <input type="text" class="input">
+
+            <span class="label">MESSAGE</span>
+            <textarea rows="20" cols="50" type="text" class="textarea"></textarea>
+        </div>
+      
+    </section>  
+ 
+    <%- include('partials/footer.ejs') %>
+
+</body>
+</html>

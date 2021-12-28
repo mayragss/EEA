@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
     <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/home/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>EEA</title>
     
 </head>
 <body>
-    <nav class="main-menu">
-        <i class="fas fa-search default-search"></i>
-        <ul class="menu-operations">
-            <li class="main-item"> Home </li>
-            <li class="main-item"> About us </li>
-            <li class="main-item"> Services </li>
-            <li class="main-item"> Contact Us </li>
-        </ul>
-    </nav>
-    
+    <%- include('partials/menu.ejs') %>
+
     <section class="container ">
         <img class="banner" src="images/home-estaleiro.jpg">
         
@@ -31,6 +24,15 @@
                 <span>DO AMBOIM</span> 
             </p>
         </div>
+
+        <i class="fas fa-chevron-left left"></i>
+        <div class="arrows">
+            <p>Introduction to EAA</p>
+
+            
+            <p>General Yard Information</p>
+        </div>
+        <i class="  fas fa-chevron-right right"></i>
 
         <div class="social-icons-banner">
             <i class="fab fa-facebook-f icons-banner padding-14"></i>
@@ -50,26 +52,129 @@
     </section> 
     <section class="intro-section">
 
+        <article class="yard-img">
+            <img src="/images/yard.jpg">
+        </article>
+
         <div class="intro-description">
             <p>
                 The Estaleiro Atlantico do Amboim (EAA), 
-                is a shipyard <br>
+                is a <br>
+                shipyard <br>
                 and energy industry in Angola. 
-                The manufacturing yard is <br>
-                located at Praia do Kissonde, 
-                Porto Amboim, Kwanza-<br>
-                Sul, Angola. Specializes in the construction
+                The manufacturing<br>
+                 yard is <br>
+                located at Praia do Kissonde,   Porto Amboim, Kwanza-<br>
+                Sul,<br>
+                 Angola. Specializes in the construction
                 of underwater <br>
                  structures and the manufacture of support <br>
                  equipment for<br>
                   the oil and gas industry.
             </p>
-        </div>
-    </section> 
+            
+            <span class="vertical-text"> Yard utilities</span>
+            <aside class="yard-desc">
+                <h1>Our yard </h1>
+                <p >
+                    150.000 m2 (15 ha), loadbearing 90 t/m2 <br>
+                    Direct acess to open sea<br>
+                     Quay 250m, 10.6m water depth<br>
+                      Quay load 5 t/m2 - 10 t/m2<br>
+                       Breakwater protection <br>
+                       Connected by road transport to Luanda
+                </p>
+            </aside>
 
-    <aside class="fabric-img">
-        <img src="/images/yard.jpg">
-    </aside>
+            <div class="vertical-yard-line"> 
+                <div class="verticalLine"> 
+                  </div>
+            </div>
+
+            <aside class="yard-utilities">
+                <h1> Yard <br> utilities</h1>
+                <p>
+                    Offices (1050 m2) <br>
+                    Restaurant (300 seats) <br>
+                    Own satellite connection <br>
+                    Fuel storage (60m3) <br>
+                    Fuel purification unit <br>
+                    E-power plant (8mW) <br>
+                    2x RO-water plant (160m3/d) <br>
+                    Anaerobe sewer treatment plant <br>
+                    Medical facilities with yard hospital (2 beds) <br>
+                    Ambulance <br>
+                    Fire fighting truck <br>
+                    EAATC (Estaleiro Atlântico do Amboim Training <br>
+                    Centre) capacity 40 trainees <br>
+                    EAASC (Estaleiro Atlântico do Amboim Safety Centre) <br>
+                    capacity 16 trainees <br>
+                    Maintenance building<br>
+                    Car wash area with oil/water separator
+                </p>
+
+            </aside>
+        </div>
+        
+    </section>  
+
+    <section>
+        <img class="fabric-full-img" src="/images/home-estaleiro.jpg">
+    </section>
+ 
+    <section class="about">
+        <div class="eea-marcadeagua">
+            <img  src="/images/white_logo.png">
+        <div class="about-div">
+          <aside class="about-aside">
+            <h1>
+                ABOUT US
+            </h1>
+            
+        <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+            elit, sed do eiusmod tempor incididunt ut labore et <br>
+             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
+             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+             ea commodo consequat. Duis aute irure dolor in <br>
+             reprehenderit in voluptate velit esse cillum dolore eu <br> 
+             fugiat nulla pariatur. Excepteur sint occaecat <br>
+             cupidatat non proident, sunt in culpa qui officia <br>
+              deserunt mollit anim id est laborum.
+            </p>   
+
+            
+        <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+            elit, sed do eiusmod tempor incididunt ut labore et <br>
+             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
+             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+             ea commodo consequat. Duis aute irure dolor in <br>
+             reprehenderit in voluptate velit esse cillum dolore eu <br> 
+             fugiat nulla pariatur. Excepteur sint occaecat <br>
+             cupidatat non proident, sunt in culpa qui officia <br>
+              deserunt mollit anim id est laborum.
+            </p>   
+
+            
+        <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+            elit, sed do eiusmod tempor incididunt ut labore et <br>
+             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
+             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+             ea commodo consequat. Duis aute irure dolor in <br>
+             reprehenderit in voluptate velit esse cillum dolore eu <br> 
+             fugiat nulla pariatur. Excepteur sint occaecat <br>
+             cupidatat non proident, sunt in culpa qui officia <br>
+              deserunt mollit anim id est laborum.
+            </p>   
+         </aside>
+        </div> 
+    </div>
+    </section>
+  
+    <%- include('partials/footer.ejs') %>
+
 
 </body>
 </html>

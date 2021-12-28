@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap");
+
+@media only screen and (min-width: 1314px) {
+    .default-search{
+        padding-top: 3%;
+    }
+}
+@media only screen and (min-width: 414px) {
+
+    .logo-nav, .default-search{
+        padding-top: 7%;
+    }
+    .menu-operations{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .menu-operations{
+        display: none;
+    }
+
+    .logo-nav, .default-search{
+        padding-top: 7%;
+    }
+    
+    .yard-img{
+        float: none;
+    }
+
+    .yard-img img{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+
+    .main-menu{
+        width: 100%;
+    }
+
+    .vertical-text{
+        display: none;
+    }
+    
+    .about{
+        height: 615px;
+    }
+
+    .eea-marcadeagua img{
+        padding-top: 78%;
+    }
+
+    .intro-description{
+        padding-left: 11%;
+    }
+
+    .fabric-full-img{
+        height: 420;
+    }
+
+    .footer-section{
+        padding-left: 3%;
+    }
+
+    .contact-section{
+        padding-left: 0%;
+    }
+
+    .other-section{
+        padding-right: 1%;
+    }
+
+    .copyright{
+        padding-top: 9%;
+    }
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .banner-tittle{
+        font-size: 40px;
+    }
+    
+    .menu-operations{
+        display: none;
+    }
+
+    .logo-nav, .default-search{
+        padding-top: 7%;
+    }
+
+    .yard-img img{
+        width: 100%;
+    }
+
+    .intro-description{
+        padding-left: 8%;
+    }
+
+    .vertical-text{
+        margin-right: 2%;
+    }
+
+    .vertical-yard-line{
+        margin-top: 30%;
+        margin-right: -2%;
+    }
+
+    .contact-section{
+        padding-left: 6%;
+    }
+
+    .copyright{
+        margin-top: 26%;
+    } 
+    .about-div{
+        margin: 0 auto;
+        display: table;
+    }
+
+    .about{
+        height: 894px;
+    }
+
+    .eea-marcadeagua img{
+        padding-top: 203%;
+    }
+
+    .logo-footer{
+        margin-top: 6%;
+    }
+
+    .fabric-full-img{
+        height: 361px;
+    }
+
+    .left-tittle{
+        padding-left: 14%;
+    }
+}

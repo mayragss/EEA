@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,500&display=swap');
 
 .main-menu {
-  height: 77px;
+  height: 101px;
   position: relative;
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -9,7 +9,8 @@
 .menu-operations {
   margin: 0 auto;
   display: table;
-  padding-top: 3%;
+  padding-top: 2.5%;
+  padding-left: 14%;
   width: 40%;
 }
 .main-item {
@@ -25,4 +26,12 @@
     float: right;
     padding-right: 5%;
     padding-top: 3%;
+    font-size: 20px;
+}
+
+.logo-nav{
+  width: 7%;
+  position: absolute;
+  padding-top: 2% !important;
+  padding-left: 11%;
 }
