@@ -36,9 +36,10 @@
 } 
 
 .contact-section-form{
-  height: 647px;
+  height: 100%;
   margin: 0 auto;
-  display: table;
+  display: table; 
+  padding-bottom: 8%;
 }
 
 .label{
@@ -49,6 +50,7 @@
 
 .input{
   background-color: #707070; 
+  opacity: 0.3;
   width: 90%;
 }
 

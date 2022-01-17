@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <title>Technology</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap");
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #313132;
+            font-family: "Montserrat", sans-serif;
+        } 
+
+        @media only screen and (min-width: 768px) {
+            .container>.navbar-collapse {
+                padding-left: 23%;
+                padding-top: 1%;
+            }
+        }
+
+        .banner {
+            opacity: 1.8;
+            width: 100%;
+            height: 469px;
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            display: block;
+        }
+
+        .banner-tittle {
+            font-size: 45px;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 6.4px;
+        }
+
+        .container-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        .left-tittle {
+            position: absolute;
+            top: 53%;
+            margin-left: 42%;
+            transform: translate(-50%, -50%);
+            width: 35%;
+            text-align: left;
+            font-weight: 800;
+        }
+
+        .left-tittle,
+        span {
+            display: table;
+        }
+
+        .padding-14 {
+            padding-bottom: 14px;
+        }
+
+        .icons-banner {
+            display: block;
+        }
+
+        .social-icons-banner {
+            display: grid;
+            position: absolute;
+            top: 53%;
+            left: 96%;
+        }
+
+        .arrows {
+            position: absolute;
+            top: 73%;
+            left: 64%;
+            width: 22%;
+        }
+
+        .left {
+            position: absolute;
+            top: 75%;
+            left: 62%;
+            display: inline-block;
+        }
+
+        .right {
+            position: absolute;
+            top: 75%;
+            left: 82%;
+            display: inline-block;
+        }
+
+        .arrows .fa,
+        .fas {
+            font-size: 19px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .arrow-p {
+            font-size: 10px;
+            padding-right: 39%;
+        }
+
+        .quality-text {
+            color: #fff;
+            text-align: left;
+            letter-spacing: 4.8px;
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        .intro-text {
+            padding-left: 24%;
+        }
+
+        .intro-section {
+            position: relative;
+            color: #858585;
+            font-family: "Montserrat", sans-serif;
+            float: right;
+        }
+
+        .yard-utilities {
+            padding-top: 13%;
+        }
+
+
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 span {
+            background: #fff;
+            margin: 0 15px;
+        }
+
+        h2:before,
+        h2:after {
+            background: black;
+            height: 2px;
+            flex: 1;
+            content: '';
+        }
+
+        h2.left:after {
+            background: none;
+        }
+
+        h2.right:before {
+            background: none;
+        }
+
+        .intro-section {
+            position: relative;
+            color: #858585;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .yard-utilities {
+            padding-top: 13%;
+        }
+
+        .intro {
+            position: absolute;
+            width: 20%;
+            margin-left: 20%;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .intro-description {
+            word-spacing: 8px;
+            font-size: 12px;
+        }
+
+        h1 {
+            letter-spacing: 6.4px;
+            color: #ffffff;
+            font-size: 34px;
+            font-weight: 500;
+            padding-top: 3%;
+        }
+
+        .vertical-yard-line {
+            display: table;
+            left: 3%;
+            float: right;
+            padding-top: 6%;
+            padding-right: 56%;
+            width: 100%;
+        }
+
+        .verticalLine {
+            border-left: 2px solid #858585;
+            height: 177px;
+            margin-left: 29%;
+        }
+
+        .vertical-text {
+            color: white;
+            display: table;
+            width: 100%;
+            writing-mode: vertical-rl;
+            float: right;
+            padding-top: 25%;
+            padding-right: 81%;
+        }
+
+        .yard-img {
+            float: left;
+            padding-top: 10%;
+        }
+
+        .yard-desc {
+            display: inline-block;
+        }
+
+        .yard-img img {
+            height: 350px;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+        }
+
+        .separator .line {
+            height: 1px;
+            flex: 1;
+            background-color: #858585;
+        }
+
+        .separator h6 {
+            padding-left: 4px;
+            color: #858585;
+        }
+
+        .fabric-full-img {
+            width: 100%;
+            height: 470px;
+            margin-top: 5%;
+        }
+
+        .about {
+            font-family: "Montserrat", sans-serif;
+            height: 882px;
+        }
+
+        .about p {
+            font-size: 17px;
+        }
+
+        .about-div {
+            position: relative;
+            display: contents;
+        }
+
+        .about-aside {
+            float: right;
+            padding-right: 15%;
+            color: #858585;
+        }
+
+        .eea-marcadeagua {
+            height: 200px;
+        }
+
+        .eea-marcadeagua img {
+            padding-top: 24%;
+            width: 97%;
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .copyright {
+            margin: 0 auto;
+            display: table;
+            font-size: 10px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .card {
+            background-color: tomato;
+        }
+
+        .shallow-list {
+            color: #C4C4C4;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include('partials/menu.ejs') %>
+
+    <section class="container-banner ">
+        <img class="banner" src="/images/our-techonology-banner.jpg">
+
+        <div class="left-tittle">
+            <p class="banner-tittle">
+                <span>OUR</span>
+                <span>TECHNOLOGY</span>
+            </p>
+            <i class="fas fa-play-circle"></i>
+            <p style="display: inline-block;
+            padding-left: 2%;
+            font-weight: 500;"> FIND OUT MORE</p>
+        </div>
+
+        <i class="fas fa-chevron-left left"></i>
+        <div class="arrows">
+            <div class="col-md-2 arrow-p">
+                <p>Fabrication facilities</p>
+            </div>
+
+            <div class="col-md-4 arrow-p" style="margin-left: 2%;">
+                <p>Production equipment</p>
+            </div>
+
+        </div>
+        <i class="  fas fa-chevron-right right"></i>
+
+        <div class="social-icons-banner">
+            <i class="fab fa-facebook-f icons-banner padding-14"></i>
+            <i class="fab fa-whatsapp icons-banner"></i>
+        </div>
+    </section>
+    <section class="col-md-12" style="padding-top: 5%;"> 
+        <section class="col-md-6 intro">
+            <div class="intro-text">
+                <div class="separator">
+                    <div class="line"></div>
+                    <h6>our technologys</h6>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-md-6 intro-section">
+            <div class="intro-description">
+                <p>
+                    In our yard, state of art technologies are utilized for<br>
+                    manufacturing support. Specific design and drawing<br>
+                    software, as well as Matrix<br>
+                    for material traceability and primavera for planning, are <br>
+                    combined with modules developed in-house for a bespoke <br>
+                    fit to all our <br>
+                    projects and requirements
+                     
+                </p>
+
+
+            </div>
+
+        </section>
+    </section> 
+
+    <section class="col-md-12 shallow-section" style="  padding: 0px; padding-top: 4%; margin-bottom: 10%; ">
+        <div class="col-md-6" style=" padding: 0px; ">
+            <img class="img-fluid float-left" src="/images/deep-water.jpg" style="width: 94%; ">
+        </div>
+
+        <div class="col-md-4">
+            <h3 style="color: white;
+            width: 10%;
+            font-size: 43px;
+            line-height: 50px;
+            font-weight: 400;
+            padding-bottom: 5%;">Fabrication facilities</h3>
+            <p class="shallow-list">Structural fabrication area of 180x32m <br>
+                of which Covered (130x32m).<br> 
+                Outside fabrication area 210x120m<br>
+                3 overhead cranes (32/8mt) 10m hook<br>
+                heigth<br>
+                Utility area (100x10m)<br>
+                PIP facility<br>
+                Multi jointing facility<br>
+                Dedicated area for Blasting and<br>
+                painting</p> 
+        </div>
+
+        <div class="col-md-2" style="padding-top: 8%;">
+
+            <span class="vertical-text"> Yard utilities</span>
+            <div class="vertical-yard-line">
+                <div class="verticalLine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-md-12 shallow-section" style="  padding: 0px; margin-bottom: 10%; ">
+        <div class="col-md-6" >
+        </div>
+
+        <div class="col-md-6">
+            <h3 style="color: white;
+            width: 10%;
+            font-size: 43px;
+            line-height: 50px;
+            font-weight: 400;
+            padding-bottom: 5%;">Production equipment</h3>
+              <p class="shallow-list"> 
+                SMAW welding equipment (22 pc) <br>
+                FCAW welding equipment (25pc)<br>
+                GTAW welding equipment (30pc) <br>
+                SAW welding equipment (8pc ) <br>
+                Welding rollers (16 pc 100mt load <br>
+                capacity each. 200mT load <br>
+                capacity/set) <br>
+                CNC plate cutter (3x12m) <br>
+                CNC profiler (round tubular)<br>
+                CNC profiler (beams) <br>
+                Rolling machine (3000mm wide,<br>
+                72mm thick in St355) upper roll <br>
+                790mm<br>
+                Vacuum Blasting machines <br>
+                Fabrication stands for spools<br>
+                fabrication
+              </p>
+        </div> 
+    </section>
+
+    <section class="col-md-12 shallow-section" style="  padding: 0px; padding-top: 4%; ">
+        <div class="col-md-6" style=" padding: 0px; ">
+         </div>
+
+        <div class="col-md-4">
+            <h3 style="color: white;
+            width: 10%;
+            font-size: 43px;
+            line-height: 50px;
+            font-weight: 400;
+            padding-bottom: 5%;">QC equipment</h3>
+            <p class="shallow-list">
+                Calibrated measuring tools (wide<br>
+                range, length, temperature, pressure) <br>
+                Weighing equipment <br>
+                Dimensional control (2x) 3D scanners <br>
+                Paint inspection equipment <br>
+                NDE equipment <br>
+                High pressure Hydrotesting <br>
+                equipment
+            </p> 
+        </div>
+
+        <div class="col-md-2" style="padding-top: 4%;">
+
+            <span class="vertical-text"> Production equipment</span>
+            <div class="vertical-yard-line">
+                <div class="verticalLine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-md-12 shallow-section" style="  padding: 0px; margin-bottom: 10%; ">
+        <div class="col-md-6" >
+        </div>
+
+        <div class="col-md-6">
+            <h3 style="color: white;
+            width: 10%;
+            font-size: 43px;
+            line-height: 50px;
+            font-weight: 400;
+            padding-bottom: 5%;">Logistc Equipment</h3>
+            
+              <span class="shallow-list"> 1 Liebheer crawler crane (750mt)</span>
+              <span class="shallow-list">1 Liebheer crawler crane (400mt) </span>
+              <span class="shallow-list"> 1 Terex (63mt)</span>
+              
+        </div> 
+    </section>
+
+     
+    <section class="col-md-12" style="    padding: 0px;    margin-bottom: 5%;">
+        <img class="fabric-full-img" src="/images/2_1640x891px.png">
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+
+</html>

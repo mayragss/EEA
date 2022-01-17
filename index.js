@@ -1,6 +1,6 @@
 
 require("express-async-errors");
-
+const compression = require('compression');
 const express = require('express'),
 app = express();
 const port = process.env.PORT || 3000,
@@ -16,7 +16,9 @@ app.use(bodyParser.json());
 app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname+ '/views')));
 app.use('/views', express.static(path.resolve(__dirname, 'views/partials')));
-app.use(express.static(path.resolve(__dirname+ '/public')));
+
+app.use(compression())
+app.use(express.static(path.resolve(__dirname+ '/public'), { maxAge: 86400000 /* 1d */ }));
 app.use(methodOverride("_method"));
  
 

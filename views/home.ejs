@@ -1,180 +1,443 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="/css/home/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/footer.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/home/banner-icons.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <title>EEA</title>
-    
+
+
+    <title>Home</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,900;1,500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap");
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #313132;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .banner {
+            opacity: 1.8;
+            width: 100%;
+            height: 469px;
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            display: block;
+        }
+
+        .banner-tittle {
+            font-size: 45px;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 6.4px;
+        }
+
+        .container-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        .left-tittle {
+            position: absolute;
+            top: 53%;
+            margin-left: 42%;
+            transform: translate(-50%, -50%);
+            width: 35%;
+            text-align: left;
+            font-weight: 800;
+        }
+
+        .left-tittle,
+        span {
+            display: table;
+        }
+
+        .padding-14 {
+            padding-bottom: 14px;
+        }
+
+        .icons-banner {
+            display: block;
+        }
+
+        .social-icons-banner {
+            display: grid;
+            position: absolute;
+            top: 53%;
+            left: 96%;
+        }
+
+        .quality-text {
+            color: #fff;
+            text-align: left;
+            letter-spacing: 4.8px;
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        .intro-text {
+            padding-left: 24%;
+        }
+
+        .intro-section {
+            position: relative;
+            color: #858585;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .yard-utilities {
+            padding-top: 13%;
+        }
+
+
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 span {
+            background: #fff;
+            margin: 0 15px;
+        }
+
+        h2:before,
+        h2:after {
+            background: black;
+            height: 2px;
+            flex: 1;
+            content: '';
+        }
+
+        h2.left:after {
+            background: none;
+        }
+
+        h2.right:before {
+            background: none;
+        }
+
+        .intro-section {
+            position: relative;
+            color: #858585;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .yard-utilities {
+            padding-top: 13%;
+        }
+
+        .intro {
+            width: 200px;
+            margin-right: 9%;
+            float: right;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .intro-description { 
+            word-spacing: 8px;
+            font-size: 12px;
+        }
+
+        h1 {
+            letter-spacing: 6.4px;
+            color: #ffffff;
+            font-size: 34px;
+            font-weight: 500;
+            padding-top: 3%;
+        }
+
+        .vertical-yard-line {
+            display: inline-grid;
+            margin-right: -1%;
+            float: right;
+            margin-top: 18%;
+        }
+
+        .verticalLine {
+            border-left: 2px solid #858585;
+            height: 177px;
+            margin-left: 29%;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            float: right;
+            margin-right: 13%;
+            margin-top: 6%;
+        }
+
+        .yard-img {
+            float: left;
+            padding-top: 10%;
+        }
+
+        .yard-desc {
+            display: inline-block;
+        } 
+
+        .separator {
+            display: flex;
+            align-items: center;
+        }
+
+        .separator .line {
+            height: 1px;
+            flex: 1;
+            background-color: #858585;
+        }
+
+        .separator h6 {
+            padding-left: 4px;
+            color: #858585;
+        }
+
+        .fabric-full-img {
+            width: 100%;
+            height: 470px;
+            margin-top: 5%;
+        }
+
+        .about {
+            font-family: "Montserrat", sans-serif;
+            height: 882px;
+        }
+
+        .about p {
+            font-size: 17px;
+        }
+
+        .about-div {
+            position: relative;
+            display: contents;
+        }
+
+        .about-aside {
+            float: right;
+            padding-right: 15%;
+            color: #858585;
+        }
+
+        .eea-marcadeagua {
+            height: 200px;
+        }
+
+        .eea-marcadeagua img {
+            padding-top: 24%;
+            width: 97%;
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .copyright {
+            margin: 0 auto;
+            display: table;
+            font-size: 10px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .intro-texto {
+            color: #858585;
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
     <%- include('partials/menu.ejs') %>
 
-    <section class="container ">
-        <img class="banner" src="images/banner_2_Prancheta 1.png">
-        
-        <div class="left-tittle"> 
-            <p  class="banner-tittle">  
-                <span>ESTALEIRO</span>  
-                <span>ATLÂNTICO</span> 
-                <span>DO AMBOIM</span> 
-            </p>
-        </div>
+        <section class="container-banner ">
+            <img class="banner" src="/images/banner_2_Prancheta1.png">
 
-        <i class="fas fa-chevron-left left"></i>
-        <div class="arrows">
-            <p>Introduction to EAA</p>
-
-            
-            <p>General Yard Information</p>
-        </div>
-        <i class="  fas fa-chevron-right right"></i>
-
-        <div class="social-icons-banner">
-            <i class="fab fa-facebook-f icons-banner padding-14"></i>
-            <i class="fab fa-whatsapp icons-banner"></i>
-        </div>
-    </section>
-
-    
-
-    <section class="intro">
-        <div class="intro-text">
-            <div class="separator">
-                <div class="line"></div>
-                <h6>intro</h6>
-              </div>
-        </div>
-    </section> 
-    <section class="intro-section">
-
-        <article class="yard-img">
-            <img src="/images/yard.jpg">
-        </article>
-
-        <div class="intro-description">
-            <p>
-                The Estaleiro Atlantico do Amboim (EAA), 
-                is a <br>
-                shipyard <br>
-                and energy industry in Angola. 
-                The manufacturing<br>
-                 yard is <br>
-                located at Praia do Kissonde,   Porto Amboim, Kwanza-<br>
-                Sul,<br>
-                 Angola. Specializes in the construction
-                of underwater <br>
-                 structures and the manufacture of support <br>
-                 equipment for<br>
-                  the oil and gas industry.
-            </p>
-            
-            <span class="vertical-text"> Yard utilities</span>
-            <aside class="yard-desc">
-                <h1>Our yard </h1>
-                <p >
-                    150.000 m2 (15 ha), loadbearing 90 t/m2 <br>
-                    Direct acess to open sea<br>
-                     Quay 250m, 10.6m water depth<br>
-                      Quay load 5 t/m2 - 10 t/m2<br>
-                       Breakwater protection <br>
-                       Connected by road transport to Luanda
+            <div class="left-tittle">
+                <p class="banner-tittle">
+                    <span>ESTALEIRO</span>
+                    <span>ATLÂNTICO</span>
+                    <span>DO AMBOIM</span>
                 </p>
-            </aside>
-
-            <div class="vertical-yard-line"> 
-                <div class="verticalLine"> 
-                  </div>
+                <i class="fas fa-play-circle"></i>
+                <p style="display: inline-block;
+            padding-left: 2%;
+            font-weight: 500;"> FIND OUT MORE</p>
             </div>
 
-            <aside class="yard-utilities">
-                <h1> Yard <br> utilities</h1>
-                <p>
-                    Offices (1050 m2) <br>
-                    Restaurant (300 seats) <br>
-                    Own satellite connection <br>
-                    Fuel storage (60m3) <br>
-                    Fuel purification unit <br>
-                    E-power plant (8mW) <br>
-                    2x RO-water plant (160m3/d) <br>
-                    Anaerobe sewer treatment plant <br>
-                    Medical facilities with yard hospital (2 beds) <br>
-                    Ambulance <br>
-                    Fire fighting truck <br>
-                    EAATC (Estaleiro Atlântico do Amboim Training <br>
-                    Centre) capacity 40 trainees <br>
-                    EAASC (Estaleiro Atlântico do Amboim Safety Centre) <br>
-                    capacity 16 trainees <br>
-                    Maintenance building<br>
-                    Car wash area with oil/water separator
-                </p>
+            <i class="fas fa-chevron-left left"></i>
+            <div class="arrows">
+                <div class="col-md-2 arrow-p">
+                    <p>Introduction <br> to EAA</p>
+                </div>
 
-            </aside>
-        </div>
-        
-    </section>  
+                <div class="col-md-4 arrow-p" style="margin-left: 2%;">
+                    <p>General <br> Yard Information</p>
+                </div>
 
-    <section>
-        <img class="fabric-full-img" src="/images/home-estaleiro.jpg">
-    </section>
- 
-    <section class="about">
-        <div class="eea-marcadeagua">
-            <img  src="/images/white_logo.png">
-        <div class="about-div">
-          <aside class="about-aside">
-            <h1>
-                ABOUT US
-            </h1>
-            
-        <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-            elit, sed do eiusmod tempor incididunt ut labore et <br>
-             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
-             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
-             ea commodo consequat. Duis aute irure dolor in <br>
-             reprehenderit in voluptate velit esse cillum dolore eu <br> 
-             fugiat nulla pariatur. Excepteur sint occaecat <br>
-             cupidatat non proident, sunt in culpa qui officia <br>
-              deserunt mollit anim id est laborum.
-            </p>   
+            </div>
+            <i class="  fas fa-chevron-right right"></i>
 
-            
-        <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-            elit, sed do eiusmod tempor incididunt ut labore et <br>
-             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
-             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
-             ea commodo consequat. Duis aute irure dolor in <br>
-             reprehenderit in voluptate velit esse cillum dolore eu <br> 
-             fugiat nulla pariatur. Excepteur sint occaecat <br>
-             cupidatat non proident, sunt in culpa qui officia <br>
-              deserunt mollit anim id est laborum.
-            </p>   
+            <div class="social-icons-banner">
+                <i class="fab fa-facebook-f icons-banner padding-14"></i>
+                <i class="fab fa-whatsapp icons-banner"></i>
+            </div>
+        </section>
 
-            
-        <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
-            elit, sed do eiusmod tempor incididunt ut labore et <br>
-             dolore magna aliqua. Ut enim ad minim veniam, quis  <br>
-             nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
-             ea commodo consequat. Duis aute irure dolor in <br>
-             reprehenderit in voluptate velit esse cillum dolore eu <br> 
-             fugiat nulla pariatur. Excepteur sint occaecat <br>
-             cupidatat non proident, sunt in culpa qui officia <br>
-              deserunt mollit anim id est laborum.
-            </p>   
-         </aside>
-        </div> 
-    </div>
-    </section>
-  
-    <%- include('partials/footer.ejs') %>
+        <section class="col-md-5 ">
+            <div class="intro">
+                <div class="intro-text">
+                    <div class="separator">
+                        <div class="line"></div>
+                        <h6>intro</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="col-md-7" style="float: right;">
+
+            <p class="intro-texto" style="padding-left: 4%;">
+                The Estaleiro Atlantico do Amboim (EAA),
+                is a <br>
+                shipyard <br>
+                and energy industry in Angola.
+                The manufacturing<br>
+                yard is <br>
+                located at Praia do Kissonde, Porto Amboim, Kwanza-<br>
+                Sul,<br>
+                Angola. Specializes in the construction
+                of underwater <br>
+                structures and the manufacture of support <br>
+                equipment for<br>
+                the oil and gas industry.
+            </p>
+        </section>
+
+        <section class="col-md-12 intro-section" style="padding: 0px;">
+
+            <div class="col-md-5" style="padding: 0px;">
+                <article class="yard-img">
+                    <img src="/images/3_481x360px.png">
+                </article>
+            </div>
+            <div class="col-md-7">
+                <div class="intro-description">
+    
+                    <span class="vertical-text"> Yard utilities</span>
+                    <aside class="yard-desc">
+                        <h1>Our yard </h1>
+                        <p>
+                            150.000 m2 (15 ha), loadbearing 90 t/m2 <br>
+                            Direct acess to open sea<br>
+                            Quay 250m, 10.6m water depth<br>
+                            Quay load 5 t/m2 - 10 t/m2<br>
+                            Breakwater protection <br>
+                            Connected by road transport to Luanda
+                        </p>
+                    </aside>
+    
+                    <div class="vertical-yard-line">
+                        <div class="verticalLine">
+                        </div>
+                    </div>
+    
+                    <aside class="yard-utilities">
+                        <h1> Yard <br> utilities</h1>
+                        <p>
+                            Offices (1050 m2) <br>
+                            Restaurant (300 seats) <br>
+                            Own satellite connection <br>
+                            Fuel storage (60m3) <br>
+                            Fuel purification unit <br>
+                            E-power plant (8mW) <br>
+                            2x RO-water plant (160m3/d) <br>
+                            Anaerobe sewer treatment plant <br>
+                            Medical facilities with yard hospital (2 beds) <br>
+                            Ambulance <br>
+                            Fire fighting truck <br>
+                            EAATC (Estaleiro Atlântico do Amboim Training <br>
+                            Centre) capacity 40 trainees <br>
+                            EAASC (Estaleiro Atlântico do Amboim Safety Centre) <br>
+                            capacity 16 trainees <br>
+                            Maintenance building<br>
+                            Car wash area with oil/water separator
+                        </p>
+    
+                    </aside>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <img class="fabric-full-img" src="/images/home-estaleiro.jpg">
+        </section>
+        <section class="about">
+            <div class="eea-marcadeagua">
+                <img src="/images/white_logo.png">
+                <div class="about-div">
+                    <aside class="about-aside">
+                        <h1>
+                            ABOUT US
+                        </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                            elit, sed do eiusmod tempor incididunt ut labore et <br>
+                            dolore magna aliqua. Ut enim ad minim veniam, quis <br>
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+                            ea commodo consequat. Duis aute irure dolor in <br>
+                            reprehenderit in voluptate velit esse cillum dolore eu <br>
+                            fugiat nulla pariatur. Excepteur sint occaecat <br>
+                            cupidatat non proident, sunt in culpa qui officia <br>
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                            elit, sed do eiusmod tempor incididunt ut labore et <br>
+                            dolore magna aliqua. Ut enim ad minim veniam, quis <br>
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+                            ea commodo consequat. Duis aute irure dolor in <br>
+                            reprehenderit in voluptate velit esse cillum dolore eu <br>
+                            fugiat nulla pariatur. Excepteur sint occaecat <br>
+                            cupidatat non proident, sunt in culpa qui officia <br>
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                            elit, sed do eiusmod tempor incididunt ut labore et <br>
+                            dolore magna aliqua. Ut enim ad minim veniam, quis <br>
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex <br>
+                            ea commodo consequat. Duis aute irure dolor in <br>
+                            reprehenderit in voluptate velit esse cillum dolore eu <br>
+                            fugiat nulla pariatur. Excepteur sint occaecat <br>
+                            cupidatat non proident, sunt in culpa qui officia <br>
+                            deserunt mollit anim id est laborum.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <%- include('partials/footer.ejs') %>
 
 </body>
+
 </html>
